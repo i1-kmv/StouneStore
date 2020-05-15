@@ -1,0 +1,41 @@
+.production
+    background-color: $black-topic
+    color: $black-topic-color
+    padding-top: 66px 
+    padding-bottom: 120px
+    &-block
+        padding-top: 311px   
+        display: flex
+    &__description    
+        margin-left: 320px       
+    &-description
+        display: inline-block
+        max-width: 512px
+        &__title
+            margin-bottom: 22px
+            position: relative
+            color: $white-topic-color
+            &::before
+                content: ''
+                width: 600px
+                height: 1px
+                position: absolute
+                bottom: 6px
+                left: 104px
+                background-color: $white-topic-color
+        &__subtitle
+            margin-bottom: 14px
+        &__text
+            margin-bottom: 70px
+            & p
+               font-weight: 200
+               line-height: 180%
+               font-size: 14px
+        &-detail
+            &__text
+                color: $black-topic-color
+    &__video
+        margin-left: 150px
+        display: inline-block
+        
+       

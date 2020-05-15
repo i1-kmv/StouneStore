@@ -1,0 +1,44 @@
+.reason
+    background-color: $black-topic
+    color: $black-topic-color
+    padding-top: 133px
+    padding-bottom: 86px
+    background-image: url('../img/reason/background.png') 
+    background-size: 100% 100% 
+    &-description
+        display: inline-block
+        max-width: 512px
+        &__title
+            margin-bottom: 22px
+            position: relative
+            color: $white-topic-color
+            &::before
+                content: ''
+                width: 500px
+                height: 1px
+                position: absolute
+                bottom: 6px
+                left: -507px
+                background-color: $white-topic-color
+        &__subtitle
+            margin-bottom: 41px
+    &-block    
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &__items
+            margin-right: 16px
+            width: 350px
+            margin-bottom: 38px
+        &__image
+            display: block
+            margin-bottom: 14px
+        &__text-1
+            font-family: 'Arimo', sans-serif
+            font-size: 18px
+            line-height: 130%
+        &__text-2
+            font-weight: 300
+            font-size: 14px
+            line-height: 140%
+            color: #4E4E4E
