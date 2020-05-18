@@ -127,6 +127,7 @@ body {
 /* Импорт стилей main*/
 .art-block {
   padding-top: 171px;
+  padding-bottom: 85px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,8 +219,8 @@ body {
   position: absolute;
   bottom: 6px;
   left: 104px;
+  right: 0;
   background-color: #EBEBEB;
-  width: 550px;
 }
 
 .best-description__subtitle {
@@ -258,7 +259,7 @@ body {
 }
 
 .purchase {
-  padding-top: 66px;
+  padding-top: 279px;
   padding-bottom: 120px;
   background: url("../img/purchase/purchase.jpg") no-repeat;
   background-size: 54% 100%;
@@ -267,7 +268,6 @@ body {
 }
 
 .purchase__description {
-  padding-top: 279px;
   max-width: 412px;
 }
 
@@ -307,12 +307,12 @@ body {
 .production {
   background-color: #000000;
   color: #F7F7F7;
-  padding-top: 66px;
   padding-bottom: 120px;
+  overflow: hidden;
 }
 
 .production-block {
-  padding-top: 311px;
+  padding-top: 273px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,12 +335,12 @@ body {
 
 .production-description__title::before {
   content: '';
-  width: 600px;
   height: 1px;
   position: absolute;
   bottom: 6px;
   left: 104px;
   background-color: #282828;
+  width: 1000px;
 }
 
 .production-description__subtitle {
@@ -364,6 +364,7 @@ body {
 .production__video {
   margin-left: 150px;
   display: inline-block;
+  padding-top: 50px;
 }
 
 .experience {
@@ -411,7 +412,7 @@ body {
 
 .experience__description {
   max-width: 412px;
-  margin-top: 345px;
+  margin-top: 275px;
   margin-right: 80px;
   margin-bottom: 119px;
   display: inline-block;
@@ -454,7 +455,7 @@ body {
 .pleasure {
   background-color: #000000;
   color: #F7F7F7;
-  padding-top: 345px;
+  padding-top: 279px;
   padding-bottom: 120px;
 }
 
@@ -498,7 +499,7 @@ body {
 }
 
 .gallery {
-  padding-top: 171px;
+  padding-top: 105px;
   margin-bottom: 85px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,6 +510,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .gallery-illustration {
@@ -560,7 +562,7 @@ body {
   bottom: 6px;
   left: 104px;
   background-color: #EBEBEB;
-  width: 500px;
+  width: 900px;
 }
 
 .gallery-description__subtitle {
@@ -598,7 +600,9 @@ body {
   padding-top: 133px;
   padding-bottom: 86px;
   background-image: url("../img/reason/background.png");
-  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -149px;
 }
 
 .reason-description {
@@ -756,6 +760,8 @@ body {
   font-size: 16px;
   line-height: 110%;
   color: #D3B36F;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contact-info__icons {
@@ -791,6 +797,11 @@ body {
   width: 100%;
   height: 137px;
   margin-bottom: 29px;
+  color: black;
+}
+
+.contact-form textarea placeholder {
+  color: black;
 }
 
 .contact-form__text {
@@ -812,6 +823,12 @@ body {
   font-size: 14px;
   line-height: 19px;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .contact-form {
+    display: none;
+  }
 }
 
 /* Импорт стилей footer*/

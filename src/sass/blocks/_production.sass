@@ -1,10 +1,10 @@
 .production
     background-color: $black-topic
     color: $black-topic-color
-    padding-top: 66px 
     padding-bottom: 120px
+    overflow: hidden
     &-block
-        padding-top: 311px   
+        padding-top: 273px   
         display: flex
     &__description    
         margin-left: 320px       
@@ -15,14 +15,15 @@
             margin-bottom: 22px
             position: relative
             color: $white-topic-color
+          
             &::before
                 content: ''
-                width: 600px
                 height: 1px
                 position: absolute
                 bottom: 6px
                 left: 104px
                 background-color: $white-topic-color
+                width: 1000px
         &__subtitle
             margin-bottom: 14px
         &__text
@@ -37,5 +38,6 @@
     &__video
         margin-left: 150px
         display: inline-block
+        padding-top: 50px
         
        
